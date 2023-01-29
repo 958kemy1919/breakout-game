@@ -45,7 +45,6 @@ while is_game_on:
         if ball.distance(wall.position()) < 25:
             if wall not in wall.hitted_walls:
                 wall.destroy_wall(wall)
-                #ball.bounce_x()
                 ball.bounce_x()
                 if wall.color() == "orange" or wall.color() == "red":
                     ball.speed_up()
